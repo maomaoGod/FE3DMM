@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{38F0BC9E-2F4C-4702-8F71-F5D77AF6BFCF}</ProjectGuid>
+    <RootNamespace>FE3DMM</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)Pylon\include;$(ProjectDir)OpenCV\OpenCV249\opencv2;$(ProjectDir)OpenCV\OpenCV249\opencv;$(ProjectDir)OpenCV\OpenCV249;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Pylon\lib\Win32;$(ProjectDir)OpenCV\CV24986\vc12\lib;$(LibraryPath)</LibraryPath>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(HALCONROOT)\include;$(HALCONROOT)\include\cpp;D:\Program Files %28x86%29\opencv\opencv-2.4.9\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(HALCONROOT)\lib\x86sse2-win32;$(HALCONROOT)\lib\$(HALCONARCH);D:\Program Files %28x86%29\opencv\opencv-2.4.9\build\x86\vc10\lib;$(LibraryPath)</LibraryPath>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Halcon\include\halconcpp;$(ProjectDir)Halcon\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Halcon\lib\x86sse2-win32;./3DMeasure;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>halconcpp.lib;opencv_core249d.lib;opencv_highgui249d.lib;opengl32.lib;glu32.lib;glaux.lib;COpenGLd.lib;iCloudCuMd.lib;dllD.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>halconcpp.lib;opencv_core249d.lib;opencv_highgui249d.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Debug\Storage\Stripscanpath\multilinescan_250x250.bmp" />
+    <None Include="..\Debug\Storage\Stripscanpath\singlelinescan_250x250.bmp" />
+    <None Include="Common\CustomControl\ChartCtrl\ChartBalloonLabel.inl" />
+    <None Include="Common\CustomControl\ChartCtrl\ChartLabel.inl" />
+    <None Include="Common\CustomControl\ChartCtrl\ChartPointsArray.inl" />
+    <None Include="Common\CustomControl\ChartCtrl\ChartSerieBase.inl" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\background.bmp" />
+    <None Include="res\btnbk.bmp" />
+    <None Include="res\btnbkclick.bmp" />
+    <None Include="res\btnempty.bmp" />
+    <None Include="res\FE-3DMM.ico" />
+    <None Include="res\FE3DMM.rc2" />
+    <None Include="res\mainbtnbk.bmp" />
+    <None Include="res\mainbtnbkclick.bmp" />
+    <None Include="res\subdlgBG.bmp" />
+    <None Include="res\X++.bmp" />
+    <None Include="res\X++clk.bmp" />
+    <None Include="res\X+.bmp" />
+    <None Include="res\X+clk.bmp" />
+    <None Include="res\X--.bmp" />
+    <None Include="res\X--clk.bmp" />
+    <None Include="res\X-.bmp" />
+    <None Include="res\x-clk.bmp" />
+    <None Include="res\Y++.bmp" />
+    <None Include="res\Y++clk.bmp" />
+    <None Include="res\Y+.bmp" />
+    <None Include="res\y+clk.bmp" />
+    <None Include="res\Y--.bmp" />
+    <None Include="res\Y--clk.bmp" />
+    <None Include="res\Y-.bmp" />
+    <None Include="res\Y-clk.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3DMeasure\BlendHandle.h" />
+    <ClInclude Include="3DMeasure\Calculate.h" />
+    <ClInclude Include="3DMeasure\COpenGL.h" />
+    <ClInclude Include="3DMeasure\DataStructure.h" />
+    <ClInclude Include="3DMeasure\iCloud3D_Operator.h" />
+    <ClInclude Include="3DMeasure\kdtree.h" />
+    <ClInclude Include="3DMeasure\MatrixOperation.h" />
+    <ClInclude Include="3DMeasure\MyClass.h" />
+    <ClInclude Include="3DMeasure\OpenGLView.h" />
+    <ClInclude Include="3DMeasure\TowBlend.h" />
+    <ClInclude Include="3DMeasure\TowMatrix.h" />
+    <ClInclude Include="3DMeasure\TowOperation.h" />
+    <ClInclude Include="3DMeasure\TowProcess.h" />
+    <ClInclude Include="3DMeasure\TowSimp.h" />
+    <ClInclude Include="Common\CustomControl\BmpBtn.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartAxis.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartAxisLabel.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartBalloonLabel.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartBarSerie.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartCandlestickSerie.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartCrossHairCursor.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartCtrl.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartCursor.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartDateTimeAxis.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartDragLineCursor.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartFont.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartGanttSerie.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartGradient.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartGrid.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartLabel.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartLegend.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartLineSerie.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartLogarithmicAxis.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartMouseListener.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartPointsArray.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartPointsSerie.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartScrollBar.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartSerie.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartSerieBase.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartSeriesMouseListener.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartStandardAxis.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartString.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartSurfaceSerie.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartTitle.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartXYSerie.h" />
+    <ClInclude Include="Common\CustomControl\ChartCtrl\PointsOrdering.h" />
+    <ClInclude Include="Common\CustomControl\CvvImage.h" />
+    <ClInclude Include="Common\CustomControl\D2DCustomeTable.h" />
+    <ClInclude Include="Common\CustomControl\GridCtrl\CellRange.h" />
+    <ClInclude Include="Common\CustomControl\GridCtrl\GridCell.h" />
+    <ClInclude Include="Common\CustomControl\GridCtrl\GridCellBase.h" />
+    <ClInclude Include="Common\CustomControl\GridCtrl\GridCtrl.h" />
+    <ClInclude Include="Common\CustomControl\GridCtrl\GridDropTarget.h" />
+    <ClInclude Include="Common\CustomControl\GridCtrl\InPlaceEdit.h" />
+    <ClInclude Include="Common\CustomControl\GridCtrl\CustomMemDC.h" />
+    <ClInclude Include="Common\CustomControl\GridCtrl\TitleTip.h" />
+    <ClInclude Include="Common\CustomControl\HeaderCtrlCl.h" />
+    <ClInclude Include="Common\CustomControl\CustomMemDC.h" />
+    <ClInclude Include="Common\CustomControl\GradientProgressCtrl.h" />
+    <ClInclude Include="Common\CustomControl\CustomEdit.h" />
+    <ClInclude Include="Common\CustomControl\ImageShowStatic.h" />
+    <ClInclude Include="Common\CustomControl\ListCtrlCl.h" />
+    <ClInclude Include="Common\CustomControl\MyRectTracker.h" />
+    <ClInclude Include="Common\CustomControl\mySliderControl.h" />
+    <ClInclude Include="Common\CustomControl\PanelWnd.h" />
+    <ClInclude Include="Common\CustomControl\ReadOnlyEdit.h" />
+    <ClInclude Include="Common\CustomControl\XPGroupBox.h" />
+    <ClInclude Include="Common\Database\AdoDatabase.h" />
+    <ClInclude Include="Common\Database\AdoRecordset.h" />
+    <ClInclude Include="Common\UmacControl\CtrlCard.h" />
+    <ClInclude Include="Common\UmacControl\CtrlCommand.h" />
+    <ClInclude Include="Common\UmacControl\CtrlDPR.h" />
+    <ClInclude Include="Common\UmacControl\CtrlIO.h" />
+    <ClInclude Include="Common\UmacControl\CtrlMotor.h" />
+    <ClInclude Include="Common\UmacControl\CtrlParam.h" />
+    <ClInclude Include="Common\UmacControl\CtrlPLC.h" />
+    <ClInclude Include="Common\UmacControl\CtrlProg.h" />
+    <ClInclude Include="Common\UmacControl\PmacDevice.h" />
+    <ClInclude Include="Common\Vision\ImageOperate.h" />
+    <ClInclude Include="Common\Vision\PylonCamera.h" />
+    <ClInclude Include="cvHead.h" />
+    <ClInclude Include="Dlg3DMeasure.h" />
+    <ClInclude Include="Dlg3DMeasureMatch.h" />
+    <ClInclude Include="Dlg3DMeasureScan.h" />
+    <ClInclude Include="DlgInitialize.h" />
+    <ClInclude Include="DlgLaserStrip.h" />
+    <ClInclude Include="DlgLaserStripSubWin.h" />
+    <ClInclude Include="DlgLaserStripSWScanPath.h" />
+    <ClInclude Include="DlgLaserStripSWScanPathMultiRow.h" />
+    <ClInclude Include="DlgLaserStripSWParamRecord.h" />
+    <ClInclude Include="DlgLaserStripSWScanPathSingleRow.h" />
+    <ClInclude Include="DlgPrint.h" />
+    <ClInclude Include="DlgPrintMotionLinkLearn.h" />
+    <ClInclude Include="DlgPrintParamCameraWatch.h" />
+    <ClInclude Include="DlgPrintParamDataRecord.h" />
+    <ClInclude Include="DlgPrintPrintOperate.h" />
+    <ClInclude Include="DlgPrintMotionControl.h" />
+    <ClInclude Include="DlgPrintParamAdjust.h" />
+    <ClInclude Include="DlgTransfer.h" />
+    <ClInclude Include="DlgTransferAuto.h" />
+    <ClInclude Include="DlgTransferManual.h" />
+    <ClInclude Include="DlgTransferManualAdvanced.h" />
+    <ClInclude Include="DlgTransferManualNew.h" />
+    <ClInclude Include="DlgTransferParamCoordCalib.h" />
+    <ClInclude Include="DlgTransferParamLearn.h" />
+    <ClInclude Include="DlgTransferVisionTrain.h" />
+    <ClInclude Include="FE-3DMM.h" />
+    <ClInclude Include="FE-3DMMDlg.h" />
+    <ClInclude Include="GCodeAnalysis.h" />
+    <ClInclude Include="InitializeThread.h" />
+    <ClInclude Include="JetPrint\JetAglientFunction.h" />
+    <ClInclude Include="JetPrint\JetAirPressurePort.h" />
+    <ClInclude Include="JetPrint\JetAirPressureSet.h" />
+    <ClInclude Include="JetPrint\JetFlowPort.h" />
+    <ClInclude Include="JetPrint\JetHarvardPump.h" />
+    <ClInclude Include="ParamData.h" />
+    <ClInclude Include="ParamDefine.h" />
+    <ClInclude Include="Process3DMeasure.h" />
+    <ClInclude Include="ProcessCore.h" />
+    <ClInclude Include="ProcessLaserStrip.h" />
+    <ClInclude Include="ProcessPrint.h" />
+    <ClInclude Include="ProcessTransfer.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TransferMatrix.h" />
+    <ClInclude Include="TransferRotateCal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3DMeasure\OpenGLView.cpp" />
+    <ClCompile Include="3DMeasure\TowOperation.cpp" />
+    <ClCompile Include="Common\CustomControl\BmpBtn.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartAxis.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartAxisLabel.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartBarSerie.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartCandlestickSerie.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartCtrl.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartCursor.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartDragLineCursor.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartFont.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartGanttSerie.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartGradient.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartGrid.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartLegend.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartLineSerie.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartPointsSerie.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartScrollBar.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartSerie.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartStandardAxis.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartTitle.cpp" />
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartXYSerie.cpp" />
+    <ClCompile Include="Common\CustomControl\CvvImage.cpp" />
+    <ClCompile Include="Common\CustomControl\D2DCustomeTable.cpp" />
+    <ClCompile Include="Common\CustomControl\GridCtrl\GridCell.cpp" />
+    <ClCompile Include="Common\CustomControl\GridCtrl\GridCellBase.cpp" />
+    <ClCompile Include="Common\CustomControl\GridCtrl\GridCtrl.cpp" />
+    <ClCompile Include="Common\CustomControl\GridCtrl\GridDropTarget.cpp" />
+    <ClCompile Include="Common\CustomControl\GridCtrl\InPlaceEdit.cpp" />
+    <ClCompile Include="Common\CustomControl\GridCtrl\TitleTip.cpp" />
+    <ClCompile Include="Common\CustomControl\HeaderCtrlCl.cpp" />
+    <ClCompile Include="Common\CustomControl\GradientProgressCtrl.cpp" />
+    <ClCompile Include="Common\CustomControl\CustomEdit.cpp" />
+    <ClCompile Include="Common\CustomControl\ImageShowStatic.cpp" />
+    <ClCompile Include="Common\CustomControl\ListCtrlCl.cpp" />
+    <ClCompile Include="Common\CustomControl\MyRectTracker.cpp" />
+    <ClCompile Include="Common\CustomControl\mySliderControl.cpp" />
+    <ClCompile Include="Common\CustomControl\PanelWnd.cpp" />
+    <ClCompile Include="Common\CustomControl\ReadOnlyEdit.cpp" />
+    <ClCompile Include="Common\CustomControl\XPGroupBox.cpp" />
+    <ClCompile Include="Common\Database\AdoDatabase.cpp" />
+    <ClCompile Include="Common\Database\AdoRecordset.cpp" />
+    <ClCompile Include="Common\UmacControl\CtrlCard.cpp" />
+    <ClCompile Include="Common\UmacControl\CtrlCommand.cpp" />
+    <ClCompile Include="Common\UmacControl\CtrlDPR.cpp" />
+    <ClCompile Include="Common\UmacControl\CtrlIO.cpp" />
+    <ClCompile Include="Common\UmacControl\CtrlMotor.cpp" />
+    <ClCompile Include="Common\UmacControl\CtrlParam.cpp" />
+    <ClCompile Include="Common\UmacControl\CtrlPLC.cpp" />
+    <ClCompile Include="Common\UmacControl\CtrlProg.cpp" />
+    <ClCompile Include="Common\UmacControl\PmacDevice.cpp" />
+    <ClCompile Include="Common\Vision\ImageOperate.cpp" />
+    <ClCompile Include="Common\Vision\PylonCamera.cpp" />
+    <ClCompile Include="Dlg3DMeasure.cpp" />
+    <ClCompile Include="Dlg3DMeasureMatch.cpp" />
+    <ClCompile Include="Dlg3DMeasureScan.cpp" />
+    <ClCompile Include="DlgInitialize.cpp" />
+    <ClCompile Include="DlgLaserStrip.cpp" />
+    <ClCompile Include="DlgLaserStripSubWin.cpp" />
+    <ClCompile Include="DlgLaserStripSWScanPath.cpp" />
+    <ClCompile Include="DlgLaserStripSWScanPathMultiRow.cpp" />
+    <ClCompile Include="DlgLaserStripSWParamRecord.cpp" />
+    <ClCompile Include="DlgLaserStripSWScanPathSingleRow.cpp" />
+    <ClCompile Include="DlgPrint.cpp" />
+    <ClCompile Include="DlgPrintMotionLinkLearn.cpp" />
+    <ClCompile Include="DlgPrintParamCameraWatch.cpp" />
+    <ClCompile Include="DlgPrintParamDataRecord.cpp" />
+    <ClCompile Include="DlgPrintPrintOperate.cpp" />
+    <ClCompile Include="DlgPrintMotionControl.cpp" />
+    <ClCompile Include="DlgPrintParamAdjust.cpp" />
+    <ClCompile Include="DlgTransfer.cpp" />
+    <ClCompile Include="DlgTransferAuto.cpp" />
+    <ClCompile Include="DlgTransferManual.cpp" />
+    <ClCompile Include="DlgTransferManualAdvanced.cpp" />
+    <ClCompile Include="DlgTransferManualNew.cpp" />
+    <ClCompile Include="DlgTransferParamCoordCalib.cpp" />
+    <ClCompile Include="DlgTransferParamLearn.cpp" />
+    <ClCompile Include="DlgTransferVisionTrain.cpp" />
+    <ClCompile Include="FE-3DMM.cpp" />
+    <ClCompile Include="FE-3DMMDlg.cpp" />
+    <ClCompile Include="GCodeAnalysis.cpp" />
+    <ClCompile Include="InitializeThread.cpp" />
+    <ClCompile Include="JetPrint\JetAglientFunction.cpp" />
+    <ClCompile Include="JetPrint\JetAirPressurePort.cpp" />
+    <ClCompile Include="JetPrint\JetAirPressureSet.cpp" />
+    <ClCompile Include="JetPrint\JetFlowPort.cpp" />
+    <ClCompile Include="JetPrint\JetHarvardPump.cpp" />
+    <ClCompile Include="ParamData.cpp" />
+    <ClCompile Include="Process3DMeasure.cpp" />
+    <ClCompile Include="ProcessCore.cpp" />
+    <ClCompile Include="ProcessLaserStrip.cpp" />
+    <ClCompile Include="ProcessPrint.cpp" />
+    <ClCompile Include="ProcessTransfer.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TransferMatrix.cpp" />
+    <ClCompile Include="TransferRotateCal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FE-3DMM.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="FE-3DMM.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

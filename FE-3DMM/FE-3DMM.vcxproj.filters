@@ -1,0 +1,830 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{aa722af2-ba60-4c4d-9e47-5460fe476667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\CustomControl">
+      <UniqueIdentifier>{d9344a65-5b59-4797-bf43-3e7cc8a3f114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Database">
+      <UniqueIdentifier>{f0f1438d-e014-476d-a20b-12adc8d88df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\UmacControl">
+      <UniqueIdentifier>{e242c5ad-079d-4272-b0a1-5e90c0c67108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Vision">
+      <UniqueIdentifier>{f0c86c20-52d1-49e5-80e0-622ff7fc9427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\CustomControl\ChartCtrl">
+      <UniqueIdentifier>{57ea43a2-2d52-43c8-9485-4e74e6823490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\CustomControl\GridCtrl">
+      <UniqueIdentifier>{809b464a-127e-417c-930a-a85ab3b73f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3DMeasure">
+      <UniqueIdentifier>{ba00d86d-c967-4569-a01a-2043794f76b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JetPrint">
+      <UniqueIdentifier>{a4ccb934-a26a-4e33-8b0f-23cc6925f905}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\FE3DMM.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\FE-3DMM.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\background.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\btnbk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\btnbkclick.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\subdlgBG.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\mainbtnbk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\mainbtnbkclick.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\X-.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\X+.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\x-clk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\X+clk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Y-.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Y+.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Y-clk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\y+clk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\btnempty.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\X++clk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\X--.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\X++.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\X--clk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Y--.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Y++.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Y++clk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Y--clk.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Common\CustomControl\ChartCtrl\ChartBalloonLabel.inl">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </None>
+    <None Include="Common\CustomControl\ChartCtrl\ChartLabel.inl">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </None>
+    <None Include="Common\CustomControl\ChartCtrl\ChartPointsArray.inl">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </None>
+    <None Include="Common\CustomControl\ChartCtrl\ChartSerieBase.inl">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </None>
+    <None Include="..\Debug\Storage\Stripscanpath\singlelinescan_250x250.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Debug\Storage\Stripscanpath\multilinescan_250x250.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FE-3DMM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FE-3DMMDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLaserStrip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTransfer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLaserStripSubWin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTransferAuto.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTransferManual.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTransferParamLearn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTransferVisionTrain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrintParamAdjust.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessCore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Process3DMeasure.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessLaserStrip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessTransfer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessPrint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrintMotionControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrintPrintOperate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\BmpBtn.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\D2DCustomeTable.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\HeaderCtrlCl.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ListCtrlCl.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\PanelWnd.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\XPGroupBox.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartAxis.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartAxisLabel.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartBalloonLabel.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartBarSerie.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartCandlestickSerie.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartCrossHairCursor.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartCtrl.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartCursor.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartDateTimeAxis.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartDragLineCursor.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartFont.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartGanttSerie.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartGradient.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartGrid.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartLabel.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartLegend.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartLineSerie.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartLogarithmicAxis.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartMouseListener.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartPointsArray.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartPointsSerie.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartScrollBar.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartSerie.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartSerieBase.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartSeriesMouseListener.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartStandardAxis.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartString.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartSurfaceSerie.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartTitle.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\ChartXYSerie.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ChartCtrl\PointsOrdering.h">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\GridCtrl\CellRange.h">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\GridCtrl\GridCell.h">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\GridCtrl\GridCellBase.h">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\GridCtrl\GridCtrl.h">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\GridCtrl\GridDropTarget.h">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\GridCtrl\InPlaceEdit.h">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\GridCtrl\TitleTip.h">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Database\AdoDatabase.h">
+      <Filter>Common\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Database\AdoRecordset.h">
+      <Filter>Common\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrintParamDataRecord.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\CustomMemDC.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\GridCtrl\CustomMemDC.h">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\GradientProgressCtrl.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgInitialize.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializeThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\CustomEdit.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrintParamCameraWatch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ImageShowStatic.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\MyRectTracker.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\CvvImage.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLaserStripSWScanPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLaserStripSWScanPathMultiRow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLaserStripSWScanPathSingleRow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLaserStripSWParamRecord.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UmacControl\CtrlCard.h">
+      <Filter>Common\UmacControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UmacControl\CtrlCommand.h">
+      <Filter>Common\UmacControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UmacControl\CtrlDPR.h">
+      <Filter>Common\UmacControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UmacControl\CtrlIO.h">
+      <Filter>Common\UmacControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UmacControl\CtrlMotor.h">
+      <Filter>Common\UmacControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UmacControl\CtrlParam.h">
+      <Filter>Common\UmacControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UmacControl\CtrlPLC.h">
+      <Filter>Common\UmacControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UmacControl\CtrlProg.h">
+      <Filter>Common\UmacControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UmacControl\PmacDevice.h">
+      <Filter>Common\UmacControl</Filter>
+    </ClInclude>
+    <ClInclude Include="GCodeAnalysis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrintMotionLinkLearn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\ReadOnlyEdit.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Vision\PylonCamera.h">
+      <Filter>Common\Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Vision\ImageOperate.h">
+      <Filter>Common\Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CustomControl\mySliderControl.h">
+      <Filter>Common\CustomControl</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTransferManualAdvanced.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTransferParamCoordCalib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TransferMatrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TransferRotateCal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTransferManualNew.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\BlendHandle.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\Calculate.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\COpenGL.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\DataStructure.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\iCloud3D_Operator.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\kdtree.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\MatrixOperation.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\MyClass.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\TowBlend.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\TowMatrix.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\TowOperation.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\TowProcess.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\TowSimp.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg3DMeasure.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg3DMeasureMatch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg3DMeasureScan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMeasure\OpenGLView.h">
+      <Filter>3DMeasure</Filter>
+    </ClInclude>
+    <ClInclude Include="JetPrint\JetAglientFunction.h">
+      <Filter>JetPrint</Filter>
+    </ClInclude>
+    <ClInclude Include="JetPrint\JetAirPressurePort.h">
+      <Filter>JetPrint</Filter>
+    </ClInclude>
+    <ClInclude Include="JetPrint\JetAirPressureSet.h">
+      <Filter>JetPrint</Filter>
+    </ClInclude>
+    <ClInclude Include="JetPrint\JetFlowPort.h">
+      <Filter>JetPrint</Filter>
+    </ClInclude>
+    <ClInclude Include="JetPrint\JetHarvardPump.h">
+      <Filter>JetPrint</Filter>
+    </ClInclude>
+    <ClInclude Include="cvHead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FE-3DMM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FE-3DMMDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLaserStrip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTransfer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLaserStripSubWin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTransferAuto.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTransferManual.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTransferParamLearn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTransferVisionTrain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrintParamAdjust.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessCore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Process3DMeasure.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessLaserStrip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessTransfer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessPrint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrintMotionControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrintPrintOperate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\BmpBtn.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\D2DCustomeTable.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\HeaderCtrlCl.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ListCtrlCl.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\PanelWnd.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\XPGroupBox.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartAxis.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartAxisLabel.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartBarSerie.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartCandlestickSerie.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartCrossHairCursor.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartCtrl.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartCursor.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartDateTimeAxis.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartDragLineCursor.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartFont.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartGanttSerie.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartGradient.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartGrid.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartLegend.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartLineSerie.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartLogarithmicAxis.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartPointsSerie.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartScrollBar.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartSerie.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartStandardAxis.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartSurfaceSerie.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartTitle.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ChartCtrl\ChartXYSerie.cpp">
+      <Filter>Common\CustomControl\ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\GridCtrl\GridCell.cpp">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\GridCtrl\GridCellBase.cpp">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\GridCtrl\GridCtrl.cpp">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\GridCtrl\GridDropTarget.cpp">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\GridCtrl\InPlaceEdit.cpp">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\GridCtrl\TitleTip.cpp">
+      <Filter>Common\CustomControl\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Database\AdoDatabase.cpp">
+      <Filter>Common\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Database\AdoRecordset.cpp">
+      <Filter>Common\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrintParamDataRecord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\GradientProgressCtrl.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgInitialize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializeThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\CustomEdit.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrintParamCameraWatch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ImageShowStatic.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\MyRectTracker.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\CvvImage.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLaserStripSWScanPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLaserStripSWScanPathSingleRow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLaserStripSWScanPathMultiRow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLaserStripSWParamRecord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UmacControl\CtrlCard.cpp">
+      <Filter>Common\UmacControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UmacControl\CtrlCommand.cpp">
+      <Filter>Common\UmacControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UmacControl\CtrlDPR.cpp">
+      <Filter>Common\UmacControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UmacControl\CtrlIO.cpp">
+      <Filter>Common\UmacControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UmacControl\CtrlMotor.cpp">
+      <Filter>Common\UmacControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UmacControl\CtrlParam.cpp">
+      <Filter>Common\UmacControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UmacControl\CtrlPLC.cpp">
+      <Filter>Common\UmacControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UmacControl\CtrlProg.cpp">
+      <Filter>Common\UmacControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UmacControl\PmacDevice.cpp">
+      <Filter>Common\UmacControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GCodeAnalysis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrintMotionLinkLearn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\ReadOnlyEdit.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Vision\PylonCamera.cpp">
+      <Filter>Common\Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Vision\ImageOperate.cpp">
+      <Filter>Common\Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CustomControl\mySliderControl.cpp">
+      <Filter>Common\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTransferManualAdvanced.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTransferManualNew.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTransferParamCoordCalib.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TransferMatrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TransferRotateCal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3DMeasure\TowOperation.cpp">
+      <Filter>3DMeasure</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg3DMeasure.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg3DMeasureMatch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg3DMeasureScan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3DMeasure\OpenGLView.cpp">
+      <Filter>3DMeasure</Filter>
+    </ClCompile>
+    <ClCompile Include="JetPrint\JetAglientFunction.cpp">
+      <Filter>JetPrint</Filter>
+    </ClCompile>
+    <ClCompile Include="JetPrint\JetAirPressurePort.cpp">
+      <Filter>JetPrint</Filter>
+    </ClCompile>
+    <ClCompile Include="JetPrint\JetAirPressureSet.cpp">
+      <Filter>JetPrint</Filter>
+    </ClCompile>
+    <ClCompile Include="JetPrint\JetFlowPort.cpp">
+      <Filter>JetPrint</Filter>
+    </ClCompile>
+    <ClCompile Include="JetPrint\JetHarvardPump.cpp">
+      <Filter>JetPrint</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FE-3DMM.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
